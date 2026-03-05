@@ -27,6 +27,12 @@
     }
 }
 
+.container {
+    padding: 1rem 3rem !important;
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
 .custom-navbar {
     background-color: var(--white-color);
 }
