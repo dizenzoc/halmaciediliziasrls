@@ -1,0 +1,132 @@
+/* =======================
+   VARIABLES
+======================= */
+
+:root {
+    --primary-color: #024154;
+    --secondary-color: #009aa5;
+    --white-color: #ffffff;
+    --text-color: var(--white-color);
+    --light-grey-color: #c0c0c0;
+}
+
+/* =======================
+   FOOTER CLASS
+======================= */
+footer {
+  background: var(--primary-color);
+  color: var(--text-color);
+  text-align:center;
+  padding: 1rem 0 0 0;
+  letter-spacing: 0.06em;
+}
+
+footer a {
+ text-decoration: none;
+}
+
+/* footer submenu */
+.footer-col h3, .footer-col h6 {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* .footer-col span {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    @media (min-width: 576px) { /* sm 
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    @media (min-width: 768px) { /* md
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    @media (min-width: 1200px) { /* lg 
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    @media (min-width: 1400px) { /* xxl 
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+} */
+
+.container-workhours {
+    justify-content: center;
+    width: 70%;
+}
+
+.footer-col a.link:hover {
+  color: var(--secondary-color) !important;
+}
+
+.footer-nav-split a:hover {
+  color: var(--secondary-color);
+}
+
+/* SOCIAL ICONS */
+.social-item {
+    width: 42px;
+    height: 42px;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white-color);
+    text-decoration: none;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* icona centrata */
+.social-item i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* hover */
+.social-item:hover {
+    transform: scale(1.12);
+    opacity: 0.9;
+}
+
+/* ======================
+   SOCIAL COLORS
+====================== */
+
+/* Instagram gradient ufficiale */
+.instagram {
+    background: radial-gradient(circle at 30% 107%,
+            #fdf497 0%,
+            #fdf497 5%,
+            #fd5949 45%,
+            #d6249f 60%,
+            #285AEB 90%);
+}
+
+/* Facebook */
+.facebook {
+    background-color: #1877F2;
+}
+
+/* Tik-Tok */
+.tiktok {
+    background-color: #0b0b0b;
+}
+
+/* WhatsApp */
+.whatsapp {
+    background-color: #25D366;
+}
+
+/* COPYRIGHT */
+.footer-bottom {
+  background: var(--secondary-color);
+}
+
+.footer-bottom p {
+  /* opacity: 0.7; */
+  font-size: 0.9rem;
+}
