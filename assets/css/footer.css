@@ -8,27 +8,45 @@
     --white-color: #ffffff;
     --text-color: var(--white-color);
     --light-grey-color: #c0c0c0;
+    --dark-primary-color: #022e3b;
+}
+
+.text-title {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+}
+
+.text-paragraph {
+    font-size: 14px !important;
+    font-weight: 400 !important;
 }
 
 /* =======================
    FOOTER CLASS
 ======================= */
 footer {
-  background: var(--primary-color);
-  color: var(--text-color);
-  text-align:center;
-  padding: 1rem 0 0 0;
-  letter-spacing: 0.06em;
-}
+    /*background: var(--primary-color);*/
 
-footer a {
- text-decoration: none;
+    background: linear-gradient(to top left,
+            var(--secondary-color) 0%,
+            var(--primary-color) 70%,
+            var(--primary-color) 100%);
+            
+    color: var(--text-color);
+    text-align: center;
+    padding: 1rem 0 0 0;
+    letter-spacing: 0.06em;
+
+    a {
+        text-decoration: none;
+    }
 }
 
 /* footer submenu */
-.footer-col h3, .footer-col h6 {
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
+.footer-col h3,
+.footer-col h6 {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
 }
 
 /* .footer-col span {
@@ -53,16 +71,34 @@ footer a {
 } */
 
 .container-workhours {
-    justify-content: center;
-    width: 70%;
+    max-width: 20rem;
+}
+
+.column-workhours {
+    border-right: 0.1px solid var(--dark-primary-color);
+    border-left: 0.1px solid var(--dark-primary-color);
+
+    @media (max-width: 1199px) {
+        border: none;
+        border-top: 0.1px solid var(--dark-primary-color);
+        border-bottom: 0.1px solid var(--dark-primary-color);
+        padding: 2rem 0 2rem 0;
+    }
+}
+
+.column-social {
+    @media (max-width: 1199px) {
+        padding: 1rem 0 1rem 0;
+    }
 }
 
 .footer-col a.link:hover {
-  color: var(--secondary-color) !important;
+    color: var(--secondary-color) !important;
+    transition: all 0.2s ease-in;
 }
 
 .footer-nav-split a:hover {
-  color: var(--secondary-color);
+    color: var(--secondary-color);
 }
 
 /* SOCIAL ICONS */
@@ -123,10 +159,10 @@ footer a {
 
 /* COPYRIGHT */
 .footer-bottom {
-  background: var(--secondary-color);
+    /*background: var(--secondary-color);*/
+    background: none;
 }
 
-.footer-bottom p {
-  /* opacity: 0.7; */
-  font-size: 0.9rem;
-}
+/* .footer-bottom p {
+    font-size: 0.9rem;
+} */
