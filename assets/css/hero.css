@@ -1,0 +1,27 @@
+.hero {
+    min-height: 50vh;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("../img/hero_images/halmaci_work.webp");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero-title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    color: white;
+}
+
+.hero-subtitle {
+    font-size: 1.1rem;
+    color: white;
+}
+
+.hero-trust {
+    color: white;
+}
+
+.btn-call-now {
+    background-color: var(--green-color) !important;
+    color: var(--white-color) !important;
+}

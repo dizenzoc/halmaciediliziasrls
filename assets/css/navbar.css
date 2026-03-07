@@ -1,130 +1,75 @@
-/* =======================
-   VARIABLES
-======================= */
-
-:root {
-    --primary-color: #024154;
-    --secondary-color: #009aa5;
-    --white-color: #ffffff;
-    --light-grey-color: #c0c0c0;
-    --text-color: var(--primary-color);
-    --cta-text-color: #ffffff;
-}
-
-/* =======================
-   NAVBAR
-======================= */
-
 .navbar {
     letter-spacing: 0.06em;
+    box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-nav {
     gap: 1.5rem;
+
+    @media (max-width: 991) {
+        margin: 0 !important;
+        margin-left: auto !important;
+    }
 }
 
 .container {
     padding: 1rem 3rem !important;
     width: 100% !important;
     max-width: 100% !important;
+
+    @media (max-width: 991px) {
+        padding: 1rem 1rem !important;
+    }
 }
 
 .custom-navbar {
     background-color: var(--white-color);
-}
 
-.custom-navbar .navbar-brand {
-    color: var(--text-color);
-    font-weight: 700;
-}
-
-.custom-navbar .navbar-brand:hover {
-    opacity: 0.8;
-}
-
-.custom-navbar .nav-link {
-    color: var(--text-color);
-    transition: color 0.2s ease-in;
-    font-size: 18px;
-    border-bottom: 1px solid var(--light-grey-color) !important;
-
-    @media (min-width: 992px) {
-        border: none !important;
+    .navbar-brand {
+        color: var(--primary-color);
+        font-weight: 700;
     }
 
-    &:hover {
-        border-bottom: 1px solid var(--light-grey-color) !important;
-        color: var(--secondary-color)
+    .navbar-brand:hover {
+        opacity: 0.8;
     }
-}
 
-.custom-navbar .navbar-toggler:focus {
-    box-shadow: none;
-}
+    .nav-link {
+        color: var(--primary-color);
+        transition: color 0.2s ease-in;
+        font-size: 18px;
+        border-bottom: 1px solid var(--grey-color) !important;
 
-.social-item {
-    width: 48px;
-    height: 48px;
-    font-size: 20px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--white-color);
-    text-decoration: none;
-    transition: transform 0.2s ease, opacity 0.2s ease;
-}
+        @media (min-width: 992px) {
+            border: none !important;
+        }
 
-/* icona centrata */
-.social-item i {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+        &:hover {
+            border-bottom: 1px solid var(--grey-color) !important;
+            color: var(--secondary-color)
+        }
+    }
 
-/* hover */
-.social-item:hover {
-    transform: scale(1.08);
-    opacity: 0.9;
-}
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
 
-/* ======================
-   SOCIAL COLORS
-====================== */
+    .btn-cta {
+        background-color: var(--primary-color);
+        color: var(--white-color);
+        border: none;
+        font-weight: 600;
+        transition: all 0.2s ease-in;
 
-/* Instagram gradient ufficiale */
-.instagram {
-    background: radial-gradient(circle at 30% 107%,
-            #fdf497 0%,
-            #fdf497 5%,
-            #fd5949 45%,
-            #d6249f 60%,
-            #285AEB 90%);
-}
+        &:hover {
+            background-color: var(--secondary-color);
+            color: var(--white-color);
+        }
+    }
 
-/* Facebook */
-.facebook {
-    background-color: #1877F2;
-}
-
-/* WhatsApp */
-.whatsapp {
-    background-color: #25D366;
-}
-
-/* =======================
-   CTA BUTTON
-======================= */
-
-.btn-cta {
-    background-color: var(--primary-color);
-    color: var(--cta-text-color);
-    border: none;
-    font-weight: 600;
-    transition: all 0.2s ease-in;
-}
-
-.btn-cta:hover {
-    background-color: var(--secondary-color);
-    color: var(--white-color);
+    @media (max-width: 991px) {
+        .navbar-nav li:last-child .nav-link {
+            border-bottom: none !important;
+        }
+    }
 }
