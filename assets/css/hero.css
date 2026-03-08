@@ -20,8 +20,3 @@
 .hero-trust {
     color: white;
 }
-
-.btn-call-now {
-    background-color: var(--green-color) !important;
-    color: var(--white-color) !important;
-}

@@ -21,6 +21,16 @@
     .service-icon {
         font-size: 64px;
     }
+
+    &:hover {
+        transform: scale(1.01);
+        color: var(--secondary-color);
+        transition: all 0.3s ease;
+    }
+
+    .service-title {
+        padding: 1.5rem 0 0 0;
+    }
 }
 
 .services-borders {

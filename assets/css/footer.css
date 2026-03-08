@@ -1,5 +1,5 @@
 footer {
-    background: linear-gradient(to top left, var(--secondary-color) 0%, var(--primary-color) 70%, var(--primary-color) 100%);
+    background: var(--primary-linear-gradient);
     color: var(--white-color);
     text-align: center;
     padding: 2rem;
@@ -40,7 +40,7 @@ footer {
 
 .footer-col a.link:hover {
     color: var(--secondary-color) !important;
-    transition: all 0.2s ease-in;
+    transition: all 0.3s ease;
 }
 
 .footer-nav-split a:hover {
@@ -57,7 +57,7 @@ footer {
     align-items: center;
     color: var(--white-color);
     text-decoration: none;
-    transition: transform 0.2s ease, opacity 0.2s ease;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 
     i {
         display: flex;

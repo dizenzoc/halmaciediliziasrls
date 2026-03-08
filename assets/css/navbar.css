@@ -12,13 +12,13 @@
     }
 }
 
-.container {
+.container-navbar {
     padding: 0.5rem !important;
     width: 100% !important;
     max-width: 100% !important;
 
     @media (max-width: 991px) {
-        padding: 1rem 1rem !important;
+        padding: 1rem !important;
     }
 }
 
@@ -40,7 +40,7 @@
 
     .nav-link {
         color: var(--primary-color);
-        transition: color 0.2s ease-in;
+        transition: color 0.3s ease;
         font-size: 16px;
         border-bottom: 1px solid var(--grey-color) !important;
 
@@ -63,7 +63,7 @@
         color: var(--white-color);
         border: none;
         font-weight: 600;
-        transition: all 0.2s ease-in;
+        transition: all 0.3s ease;
 
         &:hover {
             background-color: var(--secondary-color);
