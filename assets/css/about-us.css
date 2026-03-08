@@ -1,0 +1,26 @@
+.about-us-container {
+    min-height: 20vh;
+    padding: 2rem;
+    background-color: var(--white-color);
+
+    .section-title {
+        margin: 0 0 2rem 0;
+
+        span {
+            font-size: 28px;
+            border-color: var(--secondary-color) !important;
+        }
+    }
+}
+
+.about-us-item {
+    color: var(--primary-color);
+}
+
+.about-us-img {
+    width: 35%;
+}
+
+.about-us-description {
+    max-width:60vh;
+}
