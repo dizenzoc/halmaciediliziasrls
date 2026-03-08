@@ -21,3 +21,9 @@ fetch('/components/servizi.html')
     .then(data => {
         document.getElementById('servizi').innerHTML = data;
     });
+
+    fetch('/components/about-us.html')
+    .then(res => res.text())
+    .then(data => {
+        document.getElementById('about-us').innerHTML = data;
+    });
