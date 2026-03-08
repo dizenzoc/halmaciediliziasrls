@@ -13,7 +13,7 @@
 }
 
 .container {
-    padding: 1rem 3rem !important;
+    padding: 0.5rem !important;
     width: 100% !important;
     max-width: 100% !important;
 
@@ -30,6 +30,10 @@
         font-weight: 700;
     }
 
+    .logo {
+        padding: 0.5rem;
+    }
+
     .navbar-brand:hover {
         opacity: 0.8;
     }
@@ -37,7 +41,7 @@
     .nav-link {
         color: var(--primary-color);
         transition: color 0.2s ease-in;
-        font-size: 18px;
+        font-size: 16px;
         border-bottom: 1px solid var(--grey-color) !important;
 
         @media (min-width: 992px) {
