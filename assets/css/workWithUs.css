@@ -1,0 +1,22 @@
+.work-with-us-container {
+    min-height: 30vh;
+}
+
+/* .work-with-us-form {
+    box-shadow: 0px 5px 25px -13px rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 16px;
+} */
+
+.form-control {
+    min-height: 3.5rem !important;
+    padding: 1rem;
+    font-size: 16px;
+    border-radius: 12px;
+}
+
+@media (min-width: 1200px) {
+    .work-with-us-container {
+        padding: 2rem;
+    }
+}

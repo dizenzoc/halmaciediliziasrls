@@ -10,8 +10,11 @@
   --grey-color: #e2e2e2;
   --green-color: #27bd27;
   --dark-green-color: #208e20;
+  --red-color: #da2929;
+  --dark-red-color: #9f1c1c;
   --primary-linear-gradient: linear-gradient(to top left, var(--secondary-color) 0%, var(--primary-color) 70%, var(--primary-color) 100%);
   --green-linear-gradient: linear-gradient(to top left, var(--green-color) 0%, var(--dark-green-color) 70%, var(--dark-green-color) 100%);
+  --red-linear-gradient: linear-gradient(to top left, var(--red-color) 0%, var(--dark-red-color) 70%, var(--dark-red-color) 100%);
 }
 
 /* DEFINIZIONE DIMENSIONI TESTI */
@@ -94,6 +97,7 @@
   padding: 0.8rem 1rem;
   text-decoration: none;
   border-radius: 12px;
+  border: none;
 
   &:hover {
     background-position: 100% 100%;
@@ -128,6 +132,11 @@
   color: var(--white-color) !important;
 }
 
+.btn-reset-form {
+  --primary-linear-gradient: var(--red-linear-gradient);
+  color: var(--white-color) !important;
+}
+
 .container-custom {
   padding: 4rem 10rem !important;
   width: 100% !important;
@@ -136,4 +145,8 @@
   @media (max-width: 991px) {
     padding: 2rem !important;
   }
+}
+
+.img-custom {
+  border-radius: 16px;
 }

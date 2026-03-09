@@ -22,8 +22,16 @@ fetch('/components/servizi.html')
         document.getElementById('servizi').innerHTML = data;
     });
 
-    fetch('/components/about-us.html')
+fetch('/components/aboutUs.html')
     .then(res => res.text())
     .then(data => {
         document.getElementById('about-us').innerHTML = data;
+    });
+
+fetch('/components/workWithUs.html')
+    .then(res => res.text())
+    .then(data => {
+        document.getElementById('work-with-us').innerHTML = data;
+
+        initWorkWithUsForm();
     });
