@@ -17,10 +17,35 @@
     color: var(--primary-color);
 }
 
-.about-us-img {
-    width: 35%;
+.about-us-img-wrapper {
+    height: 100%;
+
+    .about-us-img {
+        max-height: 100rem;
+    }
 }
 
-.about-us-description {
-    max-width:60vh;
+.about-us-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-left {
+    display: flex;
+    height: 100%;
+}
+
+.about-img {
+    width: 160px;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.about-img img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
