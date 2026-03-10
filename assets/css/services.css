@@ -27,7 +27,7 @@
 
     &:hover .service-icon {
         color: var(--secondary-color);
-        font-size: 50px;
+        font-size: 60px;
         transition: all 0.3s ease;
     }
 }
