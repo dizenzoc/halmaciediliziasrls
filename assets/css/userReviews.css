@@ -5,10 +5,15 @@
 }
 
 .user-review-list {
-    display: flex;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(2, auto);
     gap: 1rem;
+
     width: max-content;
-    animation: scrollReviews 30s linear infinite;
+
+    animation: scrollReviews 40s linear infinite;
+
 
     &:hover {
         animation-play-state: paused;
@@ -68,4 +73,13 @@
     100% {
         transform: translateX(-50%);
     }
+}
+
+.user-review-container {
+    overflow: hidden;
+    mask-image: linear-gradient(to right,
+            transparent,
+            black 10%,
+            black 90%,
+            transparent);
 }

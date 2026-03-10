@@ -85,19 +85,6 @@
         box-shadow: none;
     }
 
-    .btn-cta {
-        background-color: var(--primary-color);
-        color: var(--white-color);
-        border: none;
-        font-weight: 600;
-        transition: all 0.3s ease;
-
-        &:hover {
-            background-color: var(--secondary-color);
-            color: var(--white-color);
-        }
-    }
-
     @media (max-width: 991px) {
         .navbar-nav li:last-child .nav-link {
             border-bottom: none !important;
