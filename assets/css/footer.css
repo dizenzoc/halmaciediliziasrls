@@ -20,18 +20,6 @@ footer {
     max-width: 20rem;
 }
 
-.column-workhours {
-    border-right: 0.1px solid var(--dark-primary-color);
-    border-left: 0.1px solid var(--dark-primary-color);
-
-    @media (max-width: 1199px) {
-        border: none;
-        border-top: 0.1px solid var(--dark-primary-color);
-        border-bottom: 0.1px solid var(--dark-primary-color);
-        padding: 2rem 0 2rem 0;
-    }
-}
-
 .column-social {
     @media (max-width: 1199px) {
         padding: 1rem 0 1rem 0;
@@ -92,20 +80,39 @@ footer {
     background-color: #25D366;
 }
 
-/* COPYRIGHT */
-.footer-bottom {
+.footer-bottom-copyright {
     background: none;
 }
 
 .footer-section-title {
-  font-family: "Poppins", sans-serif !important;
-  font-weight: 300 !important;
-  font-style: normal !important;
-  font-size: 16px !important;
+    font-family: "Poppins", sans-serif !important;
+    font-weight: 300 !important;
+    font-style: normal !important;
+    font-size: 16px !important;
+    position: relative;
 
-  text-transform: uppercase;
+    span {
+        font-size: 18px;
+        position: relative;
 
-  span {
-    border-bottom: 3px solid white;
-  }
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(to right,
+                    transparent,
+                    var(--secondary-color),
+                    transparent);
+            opacity: 0.8;
+            transition: all 0.3s ease;
+        }
+
+        &:hover::after {
+            opacity: 1;
+            height: 2.1px;
+        }
+    }
 }

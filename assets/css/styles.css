@@ -17,6 +17,10 @@
   --red-linear-gradient: linear-gradient(to top left, var(--red-color) 0%, var(--dark-red-color) 70%, var(--dark-red-color) 100%);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* DEFINIZIONE DIMENSIONI TESTI */
 .font-title {
   font-family: "Poppins", sans-serif !important;
@@ -68,12 +72,32 @@
   margin: 0 0 2rem 0;
   letter-spacing: 0.3rem;
   padding: 0 0 1.5rem 0;
-
   text-transform: uppercase;
+  position: relative;
 
   span {
     font-size: 30px;
-    border-bottom: 3px solid var(--secondary-color);
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(to right,
+          transparent,
+          var(--secondary-color),
+          transparent);
+      opacity: 0.8;
+      transition: all 0.3s ease;
+    }
+
+    &:hover::after {
+      opacity: 1;
+      height: 2.1px;
+    }
   }
 }
 
@@ -87,9 +111,9 @@
   transition: background-position 0.3s ease;
   font-size: 16px;
   display: flex;
-  gap: 0.5rem;
   justify-content: center;
   align-items: center;
+  gap: 0.5rem;
   color: var(--white-color);
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -101,6 +125,11 @@
 
   &:hover {
     background-position: 100% 100%;
+
+    i {
+      transform: scale(1.3);
+      transition: all 0.3s ease;
+    }
   }
 }
 
@@ -150,3 +179,74 @@
 .img-custom {
   border-radius: 16px;
 }
+
+/* SEPARATORI CUSTOM */
+.gradient-separators .item-separators {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.gradient-separators .item-separators>* {
+  transition: transform 0.3s ease;
+}
+
+.gradient-separators .item-separators:hover>* {
+  transform: scale(1.05);
+}
+
+/* DIVISORI DESKTOP (verticali) */
+@media (min-width:1200px) {
+
+  .gradient-separators .item-separators:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 25%;
+    height: 50%;
+    width: 1px;
+    opacity: 0.6;
+    background: linear-gradient(to bottom,
+        transparent,
+        var(--secondary-color),
+        transparent);
+    transition: opacity 0.3s ease;
+  }
+
+  .gradient-separators .item-separators:hover::after {
+    opacity: 0.9;
+  }
+}
+
+/* MOBILE / TABLET (orizzontali) */
+@media (max-width:1199px) {
+
+  .gradient-separators .item-separators::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 80%;
+    height: 1px;
+    opacity: 0.4;
+    background: linear-gradient(to right,
+        transparent,
+        var(--secondary-color),
+        transparent);
+  }
+
+  .gradient-separators .item-separators:last-child::after {
+    display: none;
+  }
+
+  .gradient-separators .item-separators {
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+/* SEPARATORI BIANCHI */
+.gradient-separators-light {
+  --secondary-color: var(--white-color);
+}
+
+/* FINE SEPARATORI CUSTOM */

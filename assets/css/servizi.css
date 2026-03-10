@@ -5,35 +5,29 @@
 }
 
 .service-item {
+    position: relative;
     color: var(--primary-color);
 
-    .service-icon {
+    & .service-icon {
         font-size: 64px;
-    }
-
-    &:hover {
-        .service-icon {
-            color: var(--secondary-color);
-            font-size: 50px;
-            transition: all 0.3s ease;
-        }
-        transform: scale(1.05);
         transition: all 0.3s ease;
     }
 
-    .service-title {
-        padding: 1.5rem 0 0 0;
+    & .service-title {
+        padding-top: 1.5rem;
     }
-}
 
-.services-borders {
-    border-right: 0.1px solid var(--secondary-color);
-    border-left: 0.1px solid var(--secondary-color);
+    &>* {
+        transition: transform 0.3s ease;
+    }
 
-    @media (max-width: 1199px) {
-        border: none;
-        border-top: 0.1px solid var(--secondary-color);
-        border-bottom: 0.1px solid var(--secondary-color);
-        padding: 1rem 0 1rem 0;
+    &:hover>* {
+        transform: scale(1.05);
+    }
+
+    &:hover .service-icon {
+        color: var(--secondary-color);
+        font-size: 50px;
+        transition: all 0.3s ease;
     }
 }
