@@ -1,20 +1,20 @@
-html,
-body {
-    height: 100%;
+html, body {
+    height: 100%;       /* full height della finestra */
     margin: 0;
     padding: 0;
+    overflow: hidden;   /* blocca lo scroll della pagina globale */
+}
+
+#content {
+    height: 100%;       /* prende tutta l'altezza disponibile */
+    overflow-y: auto;   /* permette scroll verticale solo qui */
+    -webkit-overflow-scrolling: touch; /* smooth scroll su mobile */
 }
 
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-}
-
-#navbar {
-    position: sticky;
-    top: 0;
-    z-index: 999;
 }
 
 #content {

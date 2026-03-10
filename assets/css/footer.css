@@ -26,13 +26,12 @@ footer {
     }
 }
 
-.footer-col a.link:hover {
-    color: var(--secondary-color) !important;
+.footer-col a.link {
     transition: all 0.3s ease;
-}
 
-.footer-nav-split a:hover {
-    color: var(--secondary-color);
+    &:hover {
+        transform: scale(1.1)
+    }
 }
 
 .social-item {
