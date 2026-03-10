@@ -16,10 +16,10 @@ fetch('/components/hero.html')
         document.getElementById('hero').innerHTML = data;
     });
 
-fetch('/components/servizi.html')
+fetch('/components/services.html')
     .then(res => res.text())
     .then(data => {
-        document.getElementById('servizi').innerHTML = data;
+        document.getElementById('services').innerHTML = data;
     });
 
 fetch('/components/aboutUs.html')
@@ -32,6 +32,14 @@ fetch('/components/workWithUs.html')
     .then(res => res.text())
     .then(data => {
         document.getElementById('work-with-us').innerHTML = data;
+
+        initWorkWithUsForm();
+    });
+
+fetch('/components/userReviews.html')
+    .then(res => res.text())
+    .then(data => {
+        document.getElementById('user-reviews').innerHTML = data;
 
         initWorkWithUsForm();
     });
