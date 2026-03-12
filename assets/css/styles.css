@@ -3,11 +3,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-  --primary-color: #024154;
-  --dark-primary-color: #022e3b;
+  /* --primary-color: #024154;
+  --dark-primary-color: #0a1418;
   --secondary-color: #009aa5;
-  --white-color: #ffffff;
-  --grey-color: #e2e2e2;
+  --white-color: #fdfdfd;
+  --grey-color: #e0eff1; */
+  --primary-color: #024154;
+  --dark-primary-color: #0a1418;
+  --secondary-color: #009aa5;
+  --white-color: #f8f8f8;
+  --grey-color: #e3e3e3;
+
   --green-color: #27bd27;
   --dark-green-color: #208e20;
   --red-color: #da2929;
@@ -26,11 +32,12 @@ html {
   font-family: "Poppins", sans-serif !important;
   font-weight: 700 !important;
   font-style: normal !important;
-  font-size: 16px !important;
+  font-size: 16px;
 }
 
 .font-paragraph {
-  font-size: 14px !important;
+  font-size: 16px;
+  text-align: left;
   font-weight: 400 !important;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -68,7 +75,6 @@ html {
   font-family: "Poppins", sans-serif !important;
   font-weight: 300 !important;
   font-style: normal !important;
-  font-size: 16px !important;
   margin: 0 0 2rem 0;
   letter-spacing: 0.3rem;
   padding: 0 0 1.5rem 0;
@@ -76,28 +82,18 @@ html {
   position: relative;
 
   span {
-    font-size: 30px;
+    font-size: 36px;
     position: relative;
+  }
 
-    &::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: -5px;
-      width: 100%;
-      height: 2px;
-      background: linear-gradient(to right,
-          transparent,
-          var(--secondary-color),
-          transparent);
-      opacity: 0.8;
-      transition: all 0.3s ease;
-    }
+  .title-first-part {
+    font-size: 36px;
+  }
 
-    &:hover::after {
-      opacity: 1;
-      height: 2.1px;
-    }
+  .title-second-part {
+    font-weight: 700;
+    margin: 0 0 0 4rem;
+    font-size: 38px;
   }
 }
 
@@ -164,92 +160,36 @@ html {
   color: var(--white-color) !important;
 }
 
+.btn-call-now-navbar {
+  @media (max-width: 991px) {
+    width: 3rem !important;
+    height: 3rem !important;
+
+    i {
+      margin: 0 !important;
+    }
+
+    span {
+      display: none !important;
+    }
+  }
+}
+
 .btn-reset-form {
   --primary-linear-gradient: var(--red-linear-gradient);
   color: var(--white-color) !important;
 }
 
 .container-custom {
-  padding: 4rem 10rem !important;
+  padding: 5rem 0 !important;
   width: 100% !important;
   max-width: 100% !important;
 
   @media (max-width: 991px) {
-    padding: 1rem !important;
+    padding: 3rem 1rem !important;
   }
 }
 
 .img-custom {
   border-radius: 12px;
 }
-
-/* SEPARATORI CUSTOM */
-.gradient-separators .item-separators {
-  position: relative;
-  transition: all 0.3s ease;
-}
-
-.gradient-separators .item-separators>* {
-  transition: transform 0.3s ease;
-}
-
-.gradient-separators .item-separators:hover>* {
-  transform: scale(1.05);
-}
-
-/* DIVISORI DESKTOP (verticali) */
-@media (min-width:1200px) {
-
-  .gradient-separators .item-separators:not(:last-child)::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 25%;
-    height: 50%;
-    width: 1px;
-    opacity: 0.6;
-    background: linear-gradient(to bottom,
-        transparent,
-        var(--secondary-color),
-        transparent);
-    transition: opacity 0.3s ease;
-  }
-
-  .gradient-separators .item-separators:hover::after {
-    opacity: 0.9;
-  }
-}
-
-/* MOBILE / TABLET (orizzontali) */
-@media (max-width:1199px) {
-
-  .gradient-separators .item-separators::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 10%;
-    width: 80%;
-    height: 1px;
-    opacity: 0.4;
-    background: linear-gradient(to right,
-        transparent,
-        var(--secondary-color),
-        transparent);
-  }
-
-  .gradient-separators .item-separators:last-child::after {
-    display: none;
-  }
-
-  .gradient-separators .item-separators {
-    padding-bottom: 2rem;
-    margin-bottom: 2rem;
-  }
-}
-
-/* SEPARATORI BIANCHI */
-.gradient-separators-light {
-  --secondary-color: var(--white-color);
-}
-
-/* FINE SEPARATORI CUSTOM */

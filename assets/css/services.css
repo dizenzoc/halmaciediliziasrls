@@ -1,11 +1,10 @@
 .service-container {
-    min-height: 30vh;
-    padding: 2rem;
-    background-color: var(--grey-color);
+    background-color: var(--white-color);
 }
 
 .service-item {
     position: relative;
+    padding: 0 2rem 0 2rem;
     color: var(--primary-color);
 
     & .service-icon {
@@ -15,6 +14,7 @@
 
     & .service-title {
         padding-top: 1.5rem;
+        font-size: 24px;
     }
 
     &>* {

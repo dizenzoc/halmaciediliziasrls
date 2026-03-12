@@ -1,12 +1,8 @@
-.work-with-us-container {
-    min-height: 25vh;
+.work-with-us-form {
+    padding: 1rem;
+    border-radius: 16px;
+    background-color: var(--grey-color);
 }
-
-/* .work-with-us-form {
-    box-shadow: 0px 5px 25px -13px rgba(0, 0, 0, 0.6);
-    padding: 2rem;
-    border-radius: 12px;
-} */
 
 .form-control {
     min-height: 3.5rem !important;
@@ -17,6 +13,6 @@
 
 @media (min-width: 1200px) {
     .work-with-us-container {
-        padding: 0 2rem;
+        padding: 2rem;
     }
 }

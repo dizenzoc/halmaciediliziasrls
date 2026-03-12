@@ -1,5 +1,5 @@
 .navbar {
-    letter-spacing: 0.06em;
+    letter-spacing: 0.03em;
     box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -43,13 +43,15 @@
         font-size: 16px;
         position: relative;
         border: none !important;
-        transition: color 0.3s ease;
+        transition: all 0.3s ease;
+
+        &:hover {
+            font-weight: 700;
+        }
     }
 
-    /* SEPARATORI PER OGNI VOCE DELLA NAVBAR */
+    /* SEPARATORI PER OGNI VOCE DELLA NAVBAR MOBILE */
     .navbar-item-separators {
-
-        /* MOBILE & TABLET (divisore sempre visibile grigio) */
         &::after {
             content: "";
             position: absolute;
@@ -62,21 +64,12 @@
             transition: all 0.3s ease;
         }
 
-        &:hover::after {
-            background: linear-gradient(to right, transparent, var(--secondary-color), transparent);
-        }
-
-        /* DESKTOP */
+        /* NASCONDI SU DESKTOP */
         @media (min-width: 992px) {
             &::after {
                 height: 0;
                 opacity: 0;
                 background: linear-gradient(to right, transparent, var(--secondary-color), transparent);
-            }
-
-            &:hover::after {
-                opacity: 1;
-                height: 2px;
             }
         }
     }
