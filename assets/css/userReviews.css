@@ -5,6 +5,7 @@
 }
 
 .section-title-user-review {
+    --primary-color: var(--white-color);
     color: var(--white-color) !important;
 }
 
