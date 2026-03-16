@@ -8,6 +8,7 @@ function initWorkWithUsForm() {
 
         const nome = document.getElementById("nome").value;
         const email = document.getElementById("email").value;
+        const numero = document.getElementById("phone").value;
         const messaggio = document.getElementById("messaggio").value;
 
         const destinatario = "zakmar@hotmail.it";
@@ -17,7 +18,8 @@ function initWorkWithUsForm() {
         const subject = encodeURIComponent(oggetto);
         const body = encodeURIComponent(
             "Nome: " + nome + "\n" +
-            "Email: " + email + "\n\n" +
+            "Email: " + email + "\n" +
+            "Numero: " + numero + "\n\n" +
             messaggio
         );
 

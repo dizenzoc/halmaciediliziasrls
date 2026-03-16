@@ -13,7 +13,7 @@ fetch('/components/footer.html')
 fetch('/components/hero.html')
     .then(res => res.text())
     .then(data => {
-        document.getElementById('hero').innerHTML = data;
+        document.getElementById('home').innerHTML = data;
     });
 
 fetch('/components/services.html')
@@ -26,6 +26,14 @@ fetch('/components/aboutUs.html')
     .then(res => res.text())
     .then(data => {
         document.getElementById('about-us').innerHTML = data;
+    });
+
+fetch('/components/contact.html')
+    .then(res => res.text())
+    .then(data => {
+        document.getElementById('contact-us').innerHTML = data;
+
+        initWorkWithUsForm();
     });
 
 fetch('/components/workWithUs.html')

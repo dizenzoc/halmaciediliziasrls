@@ -35,3 +35,26 @@
         font-size: 50px !important;
     }
 }
+
+.contact-item {
+    color: var(--dark-color);
+    transition: color 0.3s ease;
+}
+
+.contact-item:hover {
+    color: var(--secondary-color);
+}
+
+/* icona */
+.contact-icon {
+    font-size: 22px;
+    width: 36px;
+    display: flex;
+    justify-content: center;
+}
+
+/* titolo */
+.contact-label {
+    font-size: 12px;
+    opacity: 0.7;
+}

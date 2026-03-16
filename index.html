@@ -6,6 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Halmaci Edilizia S.R.L.S.</title>
 
+    <!-- SEO -->
+    <meta name="description"
+        content="Halmaci Edilizia SRLS offre ristrutturazioni, lavori edili e servizi professionali per abitazioni e aziende. Contattaci per un preventivo.">
+    <meta property="og:title" content="Halmaci Edilizia SRLS">
+    <meta property="og:description" content="Ristrutturazioni e lavori edili professionali.">
+    <meta name="author" content="Halmaci Edilizia SRLS">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://halmaciediliziasrls.it">
+    <meta property="og:image" content="https://halmaciediliziasrls.it/assets/img/logo_halmaci_testo_destra">
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon-package/favicon-96x96.png">
+    <link rel="icon" href="/assets/img/favicon-package/favicon.svg" type="image/svg+xml" sizes="any">
+    <link rel="icon" href="/assets/img/favicon-package/favicon.ico">
+    <link rel="apple-touch-icon" href="/assets/img/favicon-package//apple-touch-icon.png">
+    <link rel="manifest" href="/assets/img/favicon-package/site.webmanifest">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: dark)">
+    <!-- <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon"> -->
+
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/styles.css">
     <link rel="stylesheet" href="../assets/css/index.css">
@@ -14,6 +35,7 @@
     <link rel="stylesheet" href="../assets/css/hero.css">
     <link rel="stylesheet" href="../assets/css/services.css">
     <link rel="stylesheet" href="../assets/css/aboutUs.css">
+    <link rel="stylesheet" href="../assets/css/contact.css">
     <link rel="stylesheet" href="../assets/css/workWithUs.css">
     <link rel="stylesheet" href="../assets/css/userReviews.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
@@ -28,13 +50,15 @@
 
     <!-- CONTAINER PRINCIPALE -->
     <div id="content">
-        <div id="hero"></div>
+        <div id="home"></div>
 
         <div id="services"></div>
 
         <div id="user-reviews"></div>
 
         <div id="about-us"></div>
+
+        <div id="contact-us"></div>
 
         <div id="work-with-us"></div>
 
@@ -45,6 +69,33 @@
     <script src="assets/js/loadComponents.js"></script>
     <script src="assets/js/workWithUs.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script>
+        document.addEventListener("click", function (e) {
+
+            const anchor = e.target.closest('a[href^="#"]');
+
+            if (!anchor) return;
+
+            const targetId = anchor.getAttribute("href");
+
+            if (targetId.length > 1) {
+
+                const target = document.querySelector(targetId);
+
+                if (target) {
+                    e.preventDefault();
+
+                    target.scrollIntoView({
+                        behavior: "smooth"
+                    });
+
+                    history.replaceState(null, null, window.location.pathname);
+                }
+
+            }
+
+        });
+    </script> -->
 </body>
 
 </html>
