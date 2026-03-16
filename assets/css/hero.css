@@ -1,6 +1,6 @@
 .hero {
     height: 88vh;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("../img/hero_images/halmaci_work.webp");
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("../img/hero_images/hero_img.png");
     background-size: cover;
     background-position: center;
     position: relative;
