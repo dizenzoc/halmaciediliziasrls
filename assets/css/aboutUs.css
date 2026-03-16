@@ -1,63 +1,60 @@
-.about-us-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    align-items: stretch;
-
-    @media (max-width: 1440px) {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-}
-
 .about-us-container {
     background-color: var(--white-color);
     padding: 2rem 0;
-    border-radius: 0px;
-
-    .about-us-img-container {
-        width: 100%;
-        overflow: hidden;
-        padding: 0 1rem 0 0;
-
-        .img-about-us {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-            border-radius: 12px;
-        }
-
-
-        @media (max-width: 1440px) {
-            padding: 0;
-        }
-    }
-
-    .about-us-description {
-        text-align: justify !important;
-    }
 }
 
+/* HERO */
+.about-hero {
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.about-bg {
+    height: 30rem;
+    background: url('../img/hero_images/hero_image.jpg') center/cover no-repeat;
+    background-attachment: fixed;
+    border-radius: 16px;
+}
+
+.about-overlay {
+    position: relative;
+    margin-top: -330px;
+    z-index: 2;
+
+    display: flex;
+    justify-content: center;
+}
+
+.about-box {
+    max-width: calc(100vw - 50rem);
+    background: #fff;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    width: 100%;
+}
+
+.about-box p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+/* CARD */
 .about-card {
     position: relative;
     height: 220px;
     border-radius: 16px;
-    overflow: hidden;
     padding: 2rem;
-    color: white;
-    cursor: pointer;
-    transition: transform 0.3s ease;
+    color: #fff;
+    overflow: hidden;
+    transition: 0.3s;
 }
-
-/* animazione card */
 
 .about-card:hover {
     transform: translateY(-6px);
     opacity: 0.92;
 }
-
-/* colori */
 
 .about-card.mission {
     background: var(--primary-color);
@@ -71,26 +68,16 @@
     background: var(--dark-primary-color);
 }
 
-/* titolo iniziale */
 .about-title {
-    /* bisogna stare attenti ai @importat perche altrimenti non si modificano */
-    font-family: "Poppins", sans-serif !important;
-    font-weight: 500 !important;
-    font-style: normal !important;
-    /* letter-spacing: 0.1rem; */
-
-    font-size: 22px;
-    transition: all 0.35s ease;
-
-    text-transform: uppercase;
-
     position: absolute;
     bottom: 40%;
     left: 2rem;
     right: 2rem;
+    font-size: 22px;
+    text-transform: uppercase;
+    transition: 0.3s;
 }
 
-/* contenuto nascosto */
 .about-content {
     position: absolute;
     bottom: 2rem;
@@ -98,14 +85,12 @@
     right: 2rem;
     opacity: 0;
     transform: translateY(20px);
-    transition: all 0.35s ease;
+    transition: 0.3s;
 }
 
-/* hover */
 .about-card:hover .about-title {
     bottom: 70%;
     font-size: 18px;
-    font-weight: 700 !important;
 }
 
 .about-card:hover .about-content {
@@ -113,16 +98,26 @@
     transform: translateY(0);
 }
 
-@media (max-width: 992px) {
+/* MOBILE */
+@media (max-width: 1400px) {
+    .about-bg {
+        height: 500px;
+    }
 
-  .about-title {
-    bottom: 70%;
-    font-size: 20px !important;
-  }
+    .about-overlay {
+        margin-top: -380px;
+    }
 
-  .about-content {
-    opacity: 1;
-    transform: none;
-  }
+    .about-title {
+        bottom: 70%;
+    }
 
+    .about-content {
+        opacity: 1;
+        transform: none;
+    }
+
+    .about-box {
+        max-width: calc(100vw - 10rem);
+    }
 }
