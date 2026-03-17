@@ -6,9 +6,9 @@
 
 .form-control {
     min-height: 3.5rem !important;
-    padding: 1rem;
     font-size: 16px;
     border-radius: 12px;
+    padding: 1rem;
 }
 
 @media (min-width: 1200px) {
@@ -18,17 +18,23 @@
 }
 
 .jobFormContainer {
-    padding: 2rem;
-    background-color: var(--secondary-color);
+    padding: 1rem;
+    background: var(--primary-linear-gradient);
     border-radius: 16px;
 }
 
+#jobForm {
+    padding: 0 !important;
+}
+
 .jobDescriptionContainer {
-    padding: 2rem;
-    /* background-color: brown; */
     border-radius: 16px;
-    align-items: center;
-    align-content: center;
+    align-items: start;
+    align-content: start;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 
     .jobDescription-title {
         text-transform: uppercase;
@@ -39,22 +45,53 @@
 .contact-item {
     color: var(--dark-color);
     transition: color 0.3s ease;
+    min-width: 0;
 }
 
 .contact-item:hover {
     color: var(--secondary-color);
 }
 
-/* icona */
+.contact-value {
+    word-break: break-word;
+}
+
 .contact-icon {
     font-size: 22px;
-    width: 36px;
+    width: 30px;
     display: flex;
     justify-content: center;
 }
 
-/* titolo */
 .contact-label {
     font-size: 12px;
     opacity: 0.7;
+}
+
+.contatti {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    justify-content: start;
+    align-items: start;
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        padding: 1rem 0 2rem 0;
+    }
+}
+
+.contacts-description-title {
+    text-transform: uppercase;
+    font-size: 40px !important;
+    letter-spacing: normal;
+    color: var(--dark-primary-color);
+}
+
+.form-label {
+    color: var(--white-color);
+}
+
+.btn-work {
+    margin-top: auto;
 }

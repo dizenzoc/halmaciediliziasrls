@@ -20,7 +20,6 @@
     position: relative;
     margin-top: -330px;
     z-index: 2;
-
     display: flex;
     justify-content: center;
 }

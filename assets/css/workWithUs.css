@@ -1,4 +1,4 @@
-.work-with-us-form {
+/* .work-with-us-form {
     padding: 1rem;
     border-radius: 16px;
     background-color: var(--grey-color);
@@ -25,7 +25,6 @@
 
 .jobDescriptionContainer {
     padding: 2rem;
-    /* background-color: brown; */
     border-radius: 16px;
     align-items: center;
     align-content: center;
@@ -34,4 +33,4 @@
         text-transform: uppercase;
         font-size: 50px !important;
     }
-}
+} */
