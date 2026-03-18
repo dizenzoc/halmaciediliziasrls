@@ -11,7 +11,7 @@
 
 .about-bg {
     height: 30rem;
-    background: url('../img/hero_images/hero_image.jpg') center/cover no-repeat;
+    background: url('../img/hero_images/about-us-img.png') center/cover no-repeat;
     background-attachment: fixed;
     border-radius: 16px;
 }
