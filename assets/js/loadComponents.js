@@ -2,6 +2,7 @@ fetch('/components/navbar.html')
     .then(res => res.text())
     .then(data => {
         document.getElementById('navbar').innerHTML = data;
+        collapseNavbarWhenClick();
     });
 
 fetch('/components/footer.html')
@@ -32,15 +33,7 @@ fetch('/components/contact.html')
     .then(res => res.text())
     .then(data => {
         document.getElementById('contact-us').innerHTML = data;
-
-        initWorkWithUsForm();
-    });
-
-fetch('/components/workWithUs.html')
-    .then(res => res.text())
-    .then(data => {
-        document.getElementById('work-with-us').innerHTML = data;
-
+        initSwitchForms();
         initWorkWithUsForm();
     });
 
