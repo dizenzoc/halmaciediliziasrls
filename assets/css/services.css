@@ -30,4 +30,10 @@
         font-size: 60px;
         transition: all 0.3s ease;
     }
+
+    .service-description {
+        @media (min-width: 1200px) {
+            height: 12rem !important;
+        }
+    }
 }

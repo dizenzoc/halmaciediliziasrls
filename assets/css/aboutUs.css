@@ -1,36 +1,33 @@
 .about-us-container {
     background-color: var(--white-color);
-    padding: 2rem 0;
-}
-
-/* HERO */
-.about-hero {
-    position: relative;
-    margin-bottom: 3rem;
+    padding: 3rem 0 !important;
 }
 
 .about-bg {
-    height: 30rem;
     background: url('../img/hero_images/about-us-img.png') center/cover no-repeat;
     background-attachment: fixed;
-    border-radius: 16px;
+    min-height: 70vh !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 1200px) {
+        padding: 1.5rem 1.5rem;
+    }
 }
 
 .about-overlay {
     position: relative;
-    margin-top: -330px;
-    z-index: 2;
     display: flex;
     justify-content: center;
+    padding: 0 0 2rem 0;
 }
 
 .about-box {
-    max-width: calc(100vw - 50rem);
+    padding: 2.5rem;
     background: #fff;
-    padding: 2rem;
     border-radius: 16px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-    width: 100%;
 }
 
 .about-box p {
@@ -99,13 +96,6 @@
 
 /* MOBILE */
 @media (max-width: 1400px) {
-    .about-bg {
-        height: 500px;
-    }
-
-    .about-overlay {
-        margin-top: -380px;
-    }
 
     .about-title {
         bottom: 70%;
@@ -115,8 +105,11 @@
         opacity: 1;
         transform: none;
     }
+}
 
-    .about-box {
-        max-width: calc(100vw - 10rem);
+@media (max-width: 991px) {
+
+    .title-about-us {
+        padding: 0 12px;
     }
 }
