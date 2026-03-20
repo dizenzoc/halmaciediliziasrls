@@ -1,11 +1,11 @@
 .hero {
-    height: 88vh;
+    height: 87vh;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("../img/hero_images/hero_img.png");
     background-size: cover;
     background-position: center;
     position: relative;
-    border-radius: 0 0 16px 16px;
-    margin: 0 1rem 1rem 1rem;
+    border-radius: 16px;
+    margin: 2rem;
 
     @media (max-height: 1200px) {
         height: 78vh;
