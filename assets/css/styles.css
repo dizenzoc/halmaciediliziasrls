@@ -14,6 +14,7 @@
   --red-color: #da2929;
   --dark-red-color: #9f1c1c;
   --primary-linear-gradient: linear-gradient(to top left, var(--secondary-color) 0%, var(--primary-color) 70%, var(--primary-color) 100%);
+  --primary-linear-gradient-reverse: linear-gradient(to top left, var(--primary-color) 0%, var(--secondary-color) 70%, var(--secondary-color) 100%);
   --secondary-linear-gradient-light: linear-gradient(to top left, var(--secondary-color) 0%, var(--light-secondary-color) 60%, #79d8e2 100%);
   --green-linear-gradient: linear-gradient(to top left, var(--green-color) 0%, var(--dark-green-color) 70%, var(--dark-green-color) 100%);
   --red-linear-gradient: linear-gradient(to top left, var(--red-color) 0%, var(--dark-red-color) 70%, var(--dark-red-color) 100%);

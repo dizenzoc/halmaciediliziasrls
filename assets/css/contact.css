@@ -15,7 +15,7 @@
 
 .form-container {
     padding: 1rem;
-    background: var(--primary-linear-gradient);
+    background: var(--primary-linear-gradient-reverse);
     border-radius: 16px;
     height: 100%;
 }
