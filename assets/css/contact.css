@@ -1,25 +1,16 @@
 #container-work-with-us,
 #container-contact-us {
-    min-height: 701.59px !important;
+    min-height: 700px;
+}
+
+.contacts-container {
+    padding: 2rem;
 }
 
 .row-form {
     padding: 1rem;
     border-radius: 16px;
     background-color: var(--grey-color);
-}
-
-.form-control {
-    min-height: 3.5rem !important;
-    font-size: 16px;
-    border-radius: 12px;
-    padding: 1rem;
-}
-
-@media (min-width: 1200px) {
-    .contacts-container {
-        padding: 2rem;
-    }
 }
 
 .form-container {
@@ -29,30 +20,57 @@
     height: 100%;
 }
 
-#form-contact-us,
-#form-work-with-us {
-    padding: 0 !important;
+#form-work-with-us,
+#form-contact-us {
+    margin-right: 0 !important;
+    padding-right: 0 !important;
 }
 
-.form-description-container {
-    border-radius: 16px;
-    align-items: start;
-    align-content: start;
-    min-width: 0;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+.form-control {
+    min-height: 3.5rem;
+    font-size: 16px;
+    border-radius: 12px;
+    padding: 1rem;
+}
 
-    .jobDescription-title {
-        text-transform: uppercase;
-        font-size: 50px !important;
+.form-label {
+    color: var(--white-color);
+}
+
+.messaggio-contact-us {
+    height: 16rem;
+    resize: vertical;
+}
+
+.form-description-title {
+    text-transform: uppercase;
+    font-size: 40px;
+    color: var(--dark-primary-color);
+}
+
+.jobDescription-title {
+    text-transform: uppercase;
+    font-size: 48px;
+}
+
+.contatti {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    justify-content: center;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .contatti {
+        grid-template-columns: 1fr;
+        padding: 1rem 0 2rem;
     }
 }
 
 .contact-item {
     color: var(--dark-color);
     transition: color 0.3s ease;
-    min-width: 0;
 }
 
 .contact-item:hover {
@@ -75,46 +93,30 @@
     opacity: 0.7;
 }
 
-.contatti {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1rem;
-    justify-content: start;
-    align-items: start;
-
-    @media (max-width: 768px) {
-        grid-template-columns: 1fr;
-        padding: 1rem 0 2rem 0;
-    }
+.form-description-container {
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: flex-start;
+    min-width: 0;
+    height: 100%;
 }
 
-.form-description-title {
-    text-transform: uppercase;
-    font-size: 40px !important;
-    letter-spacing: normal;
-    color: var(--dark-primary-color);
-}
-
-.form-label {
-    color: var(--white-color);
-}
-
-.messaggio-contact-us {
-    height: 16rem;
-    resize: vertical;
-}
-
-/* --- ANIMAZIONE SLIDER --- */
 .form-slider {
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
+}
+
+.form-slider.fixed-height {
+    transition: height 0.3s ease;
 }
 
 .row-form {
     position: absolute;
     width: 100%;
     top: 0;
-    left: 12px;
+    left: 0;
     opacity: 0;
     transform: translateX(50px);
     transition: all 0.4s ease;
@@ -137,14 +139,3 @@
     transform: translateX(50px);
     opacity: 0;
 }
-
-.form-slider {
-    position: relative;
-    overflow: hidden;
-}
-
-.form-slider.fixed-height {
-    transition: height 0.3s ease;
-}
-
-/* //////////////////////////// */

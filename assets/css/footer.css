@@ -2,7 +2,6 @@ footer {
     background: var(--primary-linear-gradient);
     color: var(--white-color);
     text-align: center;
-    padding: 2rem;
     letter-spacing: 0.06em;
     border-radius: 16px 16px 0 0;
 
@@ -11,10 +10,40 @@ footer {
     }
 }
 
+.contatti-footer {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    justify-content: start;
+    align-items: start;
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        padding: 1rem 0 2rem 0;
+    }
+
+    .contact-item {
+        justify-content: center;
+
+        &:hover {
+            color: var(--light-secondary-color);
+        }
+    }
+}
+
 .footer-col .font-title,
 .footer-col .font-paragraph {
     text-transform: uppercase;
     letter-spacing: 0.1em;
+}
+
+.font-paragraph-footer {
+    font-size: 14px;
+    text-align: left;
+    font-weight: 400 !important;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 .container-workhours {
@@ -92,4 +121,9 @@ footer {
     text-transform: uppercase;
     position: relative;
     letter-spacing: 0.1rem;
+}
+
+.powered-by {
+    background-color: VAR(--green-color);
+    color: var(--white-color);
 }

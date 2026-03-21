@@ -26,14 +26,7 @@
 }
 
 .service-title {
-    font-size: 20px;
     margin-bottom: 0.5rem;
-}
-
-.service-description {
-    font-size: 14.5px;
-    line-height: 1.7;
-    color: #444;
 }
 
 @media (min-width: 768px) {
@@ -54,14 +47,6 @@
 
     .service-icon {
         font-size: 56px;
-    }
-
-    .service-title {
-        font-size: 22px;
-    }
-
-    .service-description {
-        font-size: 15px;
     }
 }
 
