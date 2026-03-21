@@ -12,6 +12,10 @@
     position: relative;
     overflow: hidden;
     height: 35vh;
+
+    @media (max-width: 1199px) {
+        margin: 0 0.5rem;
+    }
 }
 
 .review-bg::after {

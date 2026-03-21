@@ -1,4 +1,3 @@
-
 function collapseNavbarWhenClick() {
     document.querySelectorAll('#mainNavbar .nav-link').forEach(link => {
         link.addEventListener('click', () => {
