@@ -24,9 +24,11 @@ footer {
 
     .contact-item {
         justify-content: center;
+        transition: all 0.3s ease;
 
         &:hover {
-            color: var(--light-secondary-color);
+            color: var(--white-color);
+            transform: scale(1.1)
         }
     }
 }

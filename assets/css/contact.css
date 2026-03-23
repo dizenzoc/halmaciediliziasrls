@@ -61,13 +61,6 @@
     width: 100%;
 }
 
-@media (max-width: 768px) {
-    .contatti {
-        grid-template-columns: 1fr;
-        padding: 1rem 0 2rem;
-    }
-}
-
 .contact-item {
     color: var(--dark-color);
     transition: color 0.3s ease;
@@ -105,7 +98,6 @@
 
 .form-slider {
     position: relative;
-    /* overflow: hidden; */
 }
 
 .form-slider.fixed-height {
@@ -138,4 +130,19 @@
 .row-form.exit-right {
     transform: translateX(50px);
     opacity: 0;
+}
+
+@media (max-width: 991px) {
+    #form-work-with-us,
+    #form-contact-us {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .contatti {
+        grid-template-columns: 1fr;
+        padding: 1rem 0 2rem;
+    }
 }
