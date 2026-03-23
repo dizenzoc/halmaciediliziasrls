@@ -6,33 +6,70 @@
     position: relative;
     border-radius: 16px;
     margin: 2rem;
-
-    @media (max-height: 1200px) {
-        height: 78vh;
-    }
-
-    @media (max-width: 1199px) {
-        margin: 1rem;
-    }
 }
 
 .hero-container {
-
-    padding: 0 3rem;
+    padding: 0 1.5rem;
 
     .hero-title {
-        font-size: clamp(2rem, 4vw, 3rem);
+        font-size: 48px;
+        line-height: 1.2;
         font-weight: 700;
         color: white;
+        margin-bottom: 1rem;
     }
 
     .hero-subtitle {
-        font-size: 1.1rem;
+        font-size: 20px;
         color: white;
+        line-height: 1.6;
+        opacity: 0.9;
+        margin-bottom: 1.5rem;
     }
 
     .hero-trust {
         color: white;
     }
+}
 
+@media (max-width: 1199px) {
+    .hero {
+        margin: 1rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .hero-container {
+        padding: 0 3rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-container {
+        padding: 0 1rem;
+    }
+
+    .btn-hero {
+        width: 100%;
+    }
+}
+
+@media (max-height: 1200px) {
+    .hero {
+        height: 78vh;
+    }
+}
+
+@media (max-height: 991px) and (max-width: 576px) {
+    .hero-title {
+        font-size: 28px !important;
+    }
+
+    .hero-subtitle {
+        font-size: 16px !important;
+    }
+
+    .btn-hero {
+        font-size: 16px !important;
+    }
 }
