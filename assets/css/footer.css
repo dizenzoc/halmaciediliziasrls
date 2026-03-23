@@ -67,9 +67,9 @@ footer {
 }
 
 .social-item {
-    width: 32px;
-    height: 32px;
-    font-size: 18px;
+    width: 48px;
+    height: 48px;
+    font-size: 24px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -126,6 +126,6 @@ footer {
 }
 
 .powered-by {
-    background-color: VAR(--green-color);
+    background-color: var(--dark-primary-color);
     color: var(--white-color);
 }
