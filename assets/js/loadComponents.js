@@ -40,7 +40,6 @@ fetch('/components/contact.html')
         document.getElementById('contact-us').innerHTML = data;
         animationReveal();
         initSwitchForms();
-        initWorkWithUsForm();
     });
 
 fetch('/components/userReviews.html')
@@ -48,5 +47,4 @@ fetch('/components/userReviews.html')
     .then(data => {
         document.getElementById('user-reviews').innerHTML = data;
         animationReveal();
-        initWorkWithUsForm();
     });
