@@ -284,4 +284,41 @@ html {
 .whatsapp {
   background-color: #25D366;
 }
+
 /* FINE SOCIALS */
+
+/* SCROLLBAR CUSTOM */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-color) var(--grey-color);
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--grey-color);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-color);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: var(--dark-primary-color);
+}
+
+::-webkit-scrollbar-corner {
+  background: var(--grey-color);
+}
+
+/* FINE SCROLLBAR CUSTOM */

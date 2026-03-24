@@ -48,3 +48,11 @@ fetch('/components/userReviews.html')
         document.getElementById('user-reviews').innerHTML = data;
         animationReveal();
     });
+
+fetch('/components/gallery.html')
+    .then(res => res.text())
+    .then(data => {
+        document.getElementById('gallery').innerHTML = data;
+        animationReveal();
+        initGallery();
+    });
