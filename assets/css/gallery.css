@@ -74,10 +74,24 @@
     height: 90vh;
 }
 
-#lightboxImg {
-    width: 100%;
+#lightboxMedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100%;
+}
+
+#lightboxMedia img,
+#lightboxMedia video {
+    max-width: 100%;
+    max-height: 90vh;
+    width: auto;
+    height: auto;
     object-fit: contain;
+}
+
+#lightboxMedia video {
+    max-height: 95vh;
 }
 
 .lightbox-close {
@@ -103,6 +117,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 999;
 }
 
 .lightbox-nav.prev {

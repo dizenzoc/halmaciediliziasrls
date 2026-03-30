@@ -3,7 +3,7 @@
 }
 
 .about-bg {
-    background: url('../img/about-us-img.png') center/cover no-repeat;
+    background: url('../img/about-us-images/about-us-img-background.png') center/cover no-repeat;
     background-attachment: fixed;
     min-height: 70vh !important;
     display: flex;
