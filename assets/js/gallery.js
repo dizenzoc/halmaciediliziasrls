@@ -30,7 +30,7 @@ function initGallery() {
     let currentPage = 0;
     let currentImgIndex = -1;
 
-    const PER_PAGE = 10;
+    const PER_PAGE = 9;
     const IMG_PATH = "./assets/img/gallery/";
     const galleryImages = document.getElementById('galleryImages');
     const prevPage = document.getElementById('prevPage');
