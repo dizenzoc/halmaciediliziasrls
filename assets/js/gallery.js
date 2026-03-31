@@ -56,7 +56,7 @@ function initGallery() {
         <li class="img" data-index="${start + idx}">
             ${isVideo
                     ? `<video src="${fullPath}" muted loop playsinline preload="metadata" controlsList="nodownload"></video>`
-                    : `<img src="${fullPath}">`
+                    : `<img src="${fullPath}" loading="lazy">`
                 }
         </li>
     `;
@@ -79,7 +79,7 @@ function initGallery() {
 
         lightboxMedia.innerHTML = isVideo
             ? `<video src="${fullPath}" controls autoplay playsinline controlsList="nodownload"></video>`
-            : `<img src="${fullPath}" alt="Dettaglio">`;
+            : `<img src="${fullPath}" alt="Dettaglio" loading="lazy">`;
 
         lightbox.classList.add('active');
         document.body.style.overflow = 'hidden';
@@ -105,7 +105,7 @@ function initGallery() {
 
         lightboxMedia.innerHTML = isVideo
             ? `<video src="${fullPath}" controls autoplay playsinline controlsList="nodownload"></video>`
-            : `<img src="${fullPath}" alt="Dettaglio">`;
+            : `<img src="${fullPath}" alt="Dettaglio" loading="lazy">`;
     }
 
     lightboxPrev.onclick = () => {
