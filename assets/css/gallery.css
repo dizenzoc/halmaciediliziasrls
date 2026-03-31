@@ -1,5 +1,6 @@
 .gallery-container {
-    max-width: 1200px;
+    max-width: none;
+    
 }
 
 .gallery-nav {
@@ -24,7 +25,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .gallery-images .img {

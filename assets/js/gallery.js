@@ -1,18 +1,21 @@
 function initGallery() {
     const images = [
-        "foto1.webp",
-        "foto2.webp",
+        // "foto1.webp",
+        // "foto2.webp",
         "foto3.webp",
         "foto4.webp",
-        "foto5.webp",
-        "foto6.webp",
-        "foto7.webp",
-        "foto8.webp",
-        "foto9.webp",
-        "foto10.webp",
-        "foto11.webp",
-        "foto12.webp",
-        "foto13.webp",
+        // "foto5.webp",
+        // "foto6.webp",
+        // "foto7.webp",
+        // "foto8.webp",
+        // "foto9.webp",
+        // "foto10.webp",
+        // "foto11.webp",
+        // "foto12.webp",
+        // "foto13.webp",
+        "foto14.webp",
+        "foto15.webp",
+
         "video1.mp4",
         "video2.mp4",
         "video3.mp4",
@@ -27,7 +30,7 @@ function initGallery() {
     let currentPage = 0;
     let currentImgIndex = -1;
 
-    const PER_PAGE = 9;
+    const PER_PAGE = 10;
     const IMG_PATH = "./assets/img/gallery/";
     const galleryImages = document.getElementById('galleryImages');
     const prevPage = document.getElementById('prevPage');
