@@ -37,10 +37,10 @@
     color: var(--white-color);
 }
 
-.messaggio-contact-us {
+/* .messaggio-contact-us {
     height: 16rem;
     resize: vertical;
-}
+} */
 
 .form-description-title {
     text-transform: uppercase;
