@@ -15,6 +15,10 @@ function initGallery() {
         // "foto13.webp",
         "foto14.webp",
         "foto15.webp",
+        "foto16.webp",
+        "foto17.webp",
+        "foto18.webp",
+        "foto19.webp",
 
         "video1.mp4",
         "video2.mp4",
