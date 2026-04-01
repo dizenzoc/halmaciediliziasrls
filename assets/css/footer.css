@@ -16,6 +16,7 @@ footer {
     gap: 1rem;
     justify-content: start;
     align-items: start;
+    padding: 0 1rem;
 
     @media (max-width: 768px) {
         grid-template-columns: 1fr;

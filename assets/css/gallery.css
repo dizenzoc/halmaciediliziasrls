@@ -1,5 +1,6 @@
 .gallery-container {
     max-width: none;
+    min-height: 45vh;
 }
 
 .gallery-nav {
