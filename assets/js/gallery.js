@@ -59,7 +59,7 @@ function initGallery() {
             return `
         <li class="img" data-index="${start + idx}">
             ${isVideo
-                    ? `<video src="${fullPath}" muted loop playsinline preload="metadata" controlsList="nodownload"></video>`
+                    ? `<video src="${fullPath}" autoplay muted playsinline controlsList="nodownload"></video>`
                     : `<img src="${fullPath}" loading="lazy">`
                 }
         </li>
@@ -71,8 +71,8 @@ function initGallery() {
         nextPage.disabled = end >= images.length;
     }
 
-    prevPage.onclick = () => { currentPage--; renderPage(); };
-    nextPage.onclick = () => { currentPage++; renderPage(); };
+    prevPage.onclick = () => { currentPage--; renderPage(); document.getElementById("gallery").scrollIntoView({ behavior: "smooth" }); };
+    nextPage.onclick = () => { currentPage++; renderPage(); document.getElementById("gallery").scrollIntoView({ behavior: "smooth" }); };
 
     function openLightbox(index) {
         currentImgIndex = index;
@@ -82,7 +82,7 @@ function initGallery() {
         const isVideo = src.endsWith(".mp4");
 
         lightboxMedia.innerHTML = isVideo
-            ? `<video src="${fullPath}" controls autoplay playsinline controlsList="nodownload"></video>`
+            ? `<video src="${fullPath}" autoplay muted playsinline controlsList="nodownload"></video>`
             : `<img src="${fullPath}" alt="Dettaglio" loading="lazy">`;
 
         lightbox.classList.add('active');
@@ -108,7 +108,7 @@ function initGallery() {
         const isVideo = src.endsWith(".mp4");
 
         lightboxMedia.innerHTML = isVideo
-            ? `<video src="${fullPath}" controls autoplay playsinline controlsList="nodownload"></video>`
+            ? `<video src="${fullPath}" autoplay muted playsinline controlsList="nodownload"></video>`
             : `<img src="${fullPath}" alt="Dettaglio" loading="lazy">`;
     }
 
